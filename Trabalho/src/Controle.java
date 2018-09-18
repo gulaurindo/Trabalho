@@ -38,9 +38,10 @@ import java.util.List;
 				case "6":
 					System.out.println("Aplicação Encerrada");
 					continuar = false;
+					System.exit(0);
 					break;
 				default:
-					System.out.println("Opção inválida");
+					System.out.println("Opção inválida");					
 					break;
 				}
 			} while (continuar);
