@@ -181,6 +181,7 @@ import java.util.Scanner;
 					for(int z=0; i<listaFuncionarios.size();z++) {					
 						System.out.println(listaFuncionarios.get(z).toString() + " Posição: " + z);
 						System.out.println("\n");
+						//dasd
 					}
 				System.out.println("Digite a posição do registro para deletar");
 				i = Integer.parseInt(input.nextLine());
