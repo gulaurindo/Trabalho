@@ -164,17 +164,24 @@ import java.util.Scanner;
 				}
 			}
 			
-			public void excluir(List<Motos>listaMotos, List<Funcionarios>listaFuncionarios) {
-				listar(listaMotos, listaFuncionarios);
+			public void excluir(List<Motos>listaMotos, List<Funcionarios>listaFuncionarios) {				
 				int x = 0, i = 0;
 				System.out.println("Digite 1 para registro de motos e 2 para registro de funcionários: ");
 				x = Integer.parseInt(lerfunc.nextLine());
-				if(x == 1) {
+				if(x == 1) {	
+					for(int z=0; i<listaMotos.size();z++) {					
+						System.out.println(listaMotos.get(z).toString() + " Posição: " + z);
+						System.out.println("\n");
+					}
 				System.out.println("Digite a posição do registro para deletar");
 				i = Integer.parseInt(input.nextLine());
 				listaMotos.remove(i);
 				}
-				if(x == 2){
+				if(x == 2){		
+					for(int z=0; i<listaFuncionarios.size();z++) {					
+						System.out.println(listaFuncionarios.get(z).toString() + " Posição: " + z);
+						System.out.println("\n");
+					}
 				System.out.println("Digite a posição do registro para deletar");
 				i = Integer.parseInt(input.nextLine());
 				listaFuncionarios.remove(i);
